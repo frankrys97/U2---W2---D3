@@ -281,9 +281,29 @@ header .hero .image img {
 }
 
 .fadeIn-title {
-  animation: fadeIn 1s backwards 0.5s;
+  animation: fadeInTitle 1s 0.5s backwards;
+}
+@keyframes fadeInTitle {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .fadeIn-img {
-  animation: fadeIn 1s backwards 1s;
+  animation: fadeInImg 1s 1s backwards;
+}
+@keyframes fadeInImg {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }/*# sourceMappingURL=style.css.map */
