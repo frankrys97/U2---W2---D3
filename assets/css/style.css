@@ -137,6 +137,62 @@ header {
   margin-block: 100px;
 }
 
+.grid-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.grid-1 > * {
+  max-width: calc(100% / 1);
+}
+.grid-1 > * > * {
+  max-width: 100%;
+}
+
+.grid-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.grid-2 > * {
+  max-width: calc(100% / 2);
+}
+.grid-2 > * > * {
+  max-width: 100%;
+}
+
+.grid-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.grid-3 > * {
+  max-width: calc(100% / 3);
+}
+.grid-3 > * > * {
+  max-width: 100%;
+}
+
+.grid-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+.grid-4 > * {
+  max-width: calc(100% / 4);
+}
+.grid-4 > * > * {
+  max-width: 100%;
+}
+
 body {
   color: #f4f4f4;
 }
@@ -193,20 +249,6 @@ header .hero .image {
   height: 100%;
 }
 header .hero .image img {
-  max-width: 100%;
-}
-
-.fourCards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  gap: 20px;
-}
-.fourCards > * {
-  max-width: calc(100% / 4);
-}
-.fourCards > * > * {
   max-width: 100%;
 }
 

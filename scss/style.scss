@@ -92,10 +92,6 @@ header {
 //   }
 // }
 
-.fourCards {
-  @include grid(4);
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
