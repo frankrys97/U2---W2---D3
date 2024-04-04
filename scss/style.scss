@@ -120,9 +120,9 @@ header {
 }
 
 .fadeIn-title {
-  @include animation(fadeIn, 1s, backwards, 0.5s);
+  @include anim(fadeIn, 1s, backwards, 0.5s);
 }
 
 .fadeIn-img {
-  @include animation(fadeIn, 1s, backwards, 1s);
+  @include anim(fadeIn, 1s, backwards, 1s);
 }
