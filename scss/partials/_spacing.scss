@@ -31,6 +31,12 @@ $sizes: (
 );
 
 @each $key, $value in $sizes {
+    .padding-#{$key} {
+      padding: $value;
+    }
+}
+
+@each $key, $value in $sizes {
   .padding-inline-#{$key} {
     padding-inline: $value;
   }

@@ -37,6 +37,26 @@ header {
   background-color: #4caf50;
 }
 
+.padding-xs {
+  padding: 10px;
+}
+
+.padding-sm {
+  padding: 20px;
+}
+
+.padding-md {
+  padding: 30px;
+}
+
+.padding-lg {
+  padding: 50px;
+}
+
+.padding-xl {
+  padding: 100px;
+}
+
 .padding-inline-xs {
   padding-inline: 10px;
 }
@@ -149,9 +169,6 @@ nav ul a:hover {
   color: gray;
 }
 
-header {
-  padding: 30px;
-}
 header .hero {
   display: flex;
   justify-content: space-between;
