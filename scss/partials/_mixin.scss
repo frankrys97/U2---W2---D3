@@ -1,0 +1,30 @@
+@mixin customH1($fontSize, $font-weight) {
+  font-size: $fontSize;
+  font-weight: $font-weight;
+  margin-block: 0;
+}
+
+@mixin floating(
+  $radius: 10px,
+  $shadow: 19px 5px 11px 5px rgba(0, 0, 0, 0.69),
+  $border: 1px solid black
+) {
+  border-radius: $radius;
+  box-shadow: $shadow;
+  border: $border;
+}
+
+@mixin grid($numElem) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+
+  > * {
+    max-width: calc(100% / #{$numElem});
+    > * {
+      max-width: 100%;
+    }
+  }
+}

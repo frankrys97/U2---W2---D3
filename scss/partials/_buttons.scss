@@ -1,0 +1,12 @@
+$colorMaphex: (
+    blue: #0e6cff,
+    orange: #ff8700,
+    green: #4caf50
+);
+
+@each $key, $value in $colorMaphex {
+    .btn-#{$key} {
+        background-color: $value;
+        @extend %btn-style;   
+    }
+}       

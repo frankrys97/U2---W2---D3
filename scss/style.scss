@@ -1,0 +1,130 @@
+@import "./partials/reset.scss";
+@import "./partials/variables.scss";
+@import "./partials/placeholder.scss";
+@import "./partials/buttons.scss";
+@import "./partials/spacing.scss";
+@import "./partials/mixin.scss";
+@import "./partials/animations.scss";
+
+// STRUTTURA
+
+// Body:
+
+body {
+  color: $text-color;
+}
+
+// Navbar:
+
+nav {
+  width: 100%;
+  background-color: rgba(230, 228, 228, 0.427);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    width: 100px;
+    height: 100px;
+    img {
+      max-width: 100%;
+    }
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+}
+
+// Header:
+
+header {
+  @extend %structure;
+  padding: 30px;
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: space-between;
+      align-items: start;
+      h3 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+    .image {
+      width: 50%;
+      height: 100%;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+// Container:
+
+// .container {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding: 20px;
+//   gap: 20px;
+//   .card {
+//     width: 25%;
+//     img {
+//       max-width: 100%;
+//     }
+//   }
+// }
+
+.fourCards {
+  @include grid(4);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.titleBig {
+  @include customH1(60px, 900);
+}
+
+.floating-hero-img {
+  @include floating(
+    10px,
+    19px 5px 11px 5px rgba(0, 0, 0, 0.69),
+    1px solid rgb(110, 109, 109)
+  );
+}
+
+.floating-container-img {
+  @include floating(10px, 19px 5px 11px 5px rgba(141, 140, 140, 0.69), 0);
+}
+
+.fadeIn-title {
+  @include animation(fadeIn, 1s, backwards, 0.5s);
+}
+
+.fadeIn-img {
+  @include animation(fadeIn, 1s, backwards, 1s);
+}

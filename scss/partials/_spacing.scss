@@ -1,0 +1,51 @@
+// @for $i from 1 through 6 {
+//     .custom-pLine-#{$i} {
+//       padding-inline: calc($i * 10px);
+//     }
+//   }
+
+//   @for $i from 1 through 6 {
+//     .custom-pBlock-#{$i} {
+//       padding-block: calc($i * 10px);
+//     }
+//   }
+
+//   @for $i from 1 through 6 {
+//     .custom-mBlock-#{$i} {
+//       margin-block: calc($i * 10px);
+//     }
+//   }
+
+//   @for $i from 1 through 6 {
+//     .custom-mLine-#{$i} {
+//       margin-inline: calc($i * 10px);
+//     }
+//   }
+
+$sizes: (
+  xs: 10px,
+  sm: 20px,
+  md: 30px,
+  lg: 50px,
+  xl: 100px,
+);
+
+@each $key, $value in $sizes {
+  .padding-inline-#{$key} {
+    padding-inline: $value;
+  }
+
+  .padding-block-#{$key} {
+    padding-block: $value;
+  }
+}
+
+@each $key, $value in $sizes {
+  .margin-inline-#{$key} {
+    margin-inline: $value;
+  }
+
+  .margin-block-#{$key} {
+    margin-block: $value;
+  }
+}

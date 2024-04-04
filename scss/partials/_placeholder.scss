@@ -1,0 +1,16 @@
+%structure {
+  background-color: $main-color;
+  width: 100%;
+}
+
+%btn-style {
+  color: white;
+  padding: 11px 30px;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  &:hover {
+    background-color: gray;
+  }
+}
